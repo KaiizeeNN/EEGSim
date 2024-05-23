@@ -1,0 +1,3 @@
+# Tüm dosyalar için satır sonu karakterleri ve izin ayarları
+* text=auto
+* -text diff
