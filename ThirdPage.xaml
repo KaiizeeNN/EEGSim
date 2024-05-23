@@ -1,0 +1,60 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EEGSimulator.ThirdPage"
+             Title="Ready Sets">
+
+    <Grid Padding="10">
+        <!-- Define Grid Rows and Columns -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Buttons in the first row -->
+        <Button 
+            Text="Set 1"
+            Grid.Row="0"
+            Grid.Column="0"
+            WidthRequest="150"
+            HeightRequest="70"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" 
+            Margin="0,25,0,0"/>
+
+        <Button 
+            Text="Set 2"
+            Grid.Row="0"
+            Grid.Column="1"
+            WidthRequest="150"
+            HeightRequest="70"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" 
+            Margin="0,25,0,0"/>
+
+        <!-- Buttons in the second row -->
+        <Button 
+            Text="Set 3"
+            Grid.Row="1"
+            Grid.Column="0"
+            WidthRequest="150"
+            HeightRequest="70"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" 
+            Margin="0,25,0,0"/>
+
+        <Button 
+            Text="Set 4"
+            Grid.Row="1"
+            Grid.Column="1"
+            WidthRequest="150"
+            HeightRequest="70"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" 
+            Margin="0,25,0,0"/>
+    </Grid>
+
+</ContentPage>
