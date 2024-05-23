@@ -7,18 +7,18 @@
         
 
         <!-- Dropdown 1 -->
-        <Label Text="Dalga Tipi"/>
+        <Label Text="Waveform"/>
         <Picker x:Name="dropdown1">
             <Picker.Items>
                 <x:String>Spike</x:String>
-                <x:String>Sinüs</x:String>
-                <x:String>Kare</x:String>
-                <x:String>Üçgen</x:String>
+                <x:String>Sine</x:String>
+                <x:String>Square</x:String>
+                <x:String>Triangle</x:String>
             </Picker.Items>
         </Picker>
 
         <!-- Dropdown 2 -->
-        <Label Text="Frekans" />
+        <Label Text="Frequency" />
         <Picker x:Name="dropdown2">
             <Picker.Items>
                 <x:String>0.1 Hz</x:String>
@@ -30,7 +30,7 @@
         </Picker>
 
         <!-- Dropdown 3 -->
-        <Label Text="Genlik" />
+        <Label Text="Amplitude" />
         <Picker x:Name="dropdown3">
             <Picker.Items>
                 <x:String>10 μV</x:String>
