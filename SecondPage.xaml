@@ -1,63 +1,57 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EEGSimulator.SecondPage"
-             Title="Second Page">
+             Title="Send Data Manually">
 
     <VerticalStackLayout Padding="10">
-        <Label 
-            Text="EEG Proje Menu"
-            FontSize="Large"
-            HorizontalOptions="Center" />
+        
 
         <!-- Dropdown 1 -->
-        <Label Text="Dropdown 1" />
+        <Label Text="Dalga Tipi"/>
         <Picker x:Name="dropdown1">
             <Picker.Items>
-                <x:String>Option 1</x:String>
-                <x:String>Option 2</x:String>
-                <x:String>Option 3</x:String>
+                <x:String>Spike</x:String>
+                <x:String>Sinüs</x:String>
+                <x:String>Kare</x:String>
+                <x:String>Üçgen</x:String>
             </Picker.Items>
         </Picker>
 
         <!-- Dropdown 2 -->
-        <Label Text="Dropdown 2" />
+        <Label Text="Frekans" />
         <Picker x:Name="dropdown2">
             <Picker.Items>
-                <x:String>Option A</x:String>
-                <x:String>Option B</x:String>
-                <x:String>Option C</x:String>
+                <x:String>0.1 Hz</x:String>
+                <x:String>0.5 Hz</x:String>
+                <x:String>2 Hz</x:String>
+                <x:String>50 Hz</x:String>
+                <x:String>60 Hz</x:String>
             </Picker.Items>
         </Picker>
 
         <!-- Dropdown 3 -->
-        <Label Text="Dropdown 3" />
+        <Label Text="Genlik" />
         <Picker x:Name="dropdown3">
             <Picker.Items>
-                <x:String>Item 1</x:String>
-                <x:String>Item 2</x:String>
-                <x:String>Item 3</x:String>
+                <x:String>10 μV</x:String>
+                <x:String>30 μV</x:String>
+                <x:String>50 μV</x:String>
+                <x:String>100 μV</x:String>
+                <x:String>500 μV</x:String>
+                <x:String>1 mV</x:String>
+                <x:String>2 mV</x:String>
+                <x:String>2.5 mV</x:String>
             </Picker.Items>
         </Picker>
 
-        <!-- Dropdown 4 -->
-        <Label Text="Dropdown 4" />
-        <Picker x:Name="dropdown4">
-            <Picker.Items>
-                <x:String>Choice 1</x:String>
-                <x:String>Choice 2</x:String>
-                <x:String>Choice 3</x:String>
-            </Picker.Items>
-        </Picker>
+        <Button HorizontalOptions="Center" Padding="20"
+            Text="Send"
+            Clicked="OnSendClicked" />
 
         <!-- Start and Stop Buttons -->
         <HorizontalStackLayout Spacing="20" Margin="20,0,0,0">
-            <Button 
-                Text="Start"
-                Clicked="OnStartClicked" />
+            
 
-            <Button 
-                Text="Stop"
-                Clicked="OnStopClicked" />
         </HorizontalStackLayout>
     </VerticalStackLayout>
 

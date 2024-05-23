@@ -13,16 +13,11 @@ namespace EEGSimulator
             InitializeComponent();
         }
 
-        private void OnStartClicked(object sender, EventArgs e)
+        private void OnSendClicked(object sender, EventArgs e)
         {
             // Start button click handling
-            DisplayAlert("Start", "Start button clicked", "OK");
+            DisplayAlert("Send", "Send button clicked", "OK");
         }
 
-        private void OnStopClicked(object sender, EventArgs e)
-        {
-            // Stop button click handling
-            DisplayAlert("Stop", "Stop button clicked", "OK");
-        }
     }
 }

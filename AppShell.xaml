@@ -10,10 +10,10 @@
         ContentTemplate="{DataTemplate local:MainPage}" />
 
     <ShellContent
-        Title="Second Page"
+        Title="Send Data Manually"
         ContentTemplate="{DataTemplate local:SecondPage}" />
 
     <ShellContent
-        Title="Third Page"
+        Title="Ready Sets"
         ContentTemplate="{DataTemplate local:ThirdPage}" />
 </Shell>
