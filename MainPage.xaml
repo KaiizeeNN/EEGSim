@@ -8,12 +8,19 @@
         <Label 
             Text="Welcome to Main Page of EEG Simulator"
             FontSize="Large"
+            x:Name="lblError"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             HorizontalTextAlignment="Center"
             VerticalTextAlignment="Center"/>
 
 
+        <Button 
+            Text="Connect Bluetooth"
+            x:Name="btnConnectDisconnect"
+            Clicked="OnConnectClicked"
+            Margin="0,25,0,0"
+            HeightRequest="100"/>
         <Button 
             Text="Send Data Manually"
             Clicked="OnGoToSecondPageClicked"
